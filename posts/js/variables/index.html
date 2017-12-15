@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+
+<link rel="canonical" href="http://adamloee.github.io/adam-blogs/posts/js/variables/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>JavaScript Variables - Adam&#39;s Post</title>
+    
+<meta name="description" content="All about JavaScript Variables ">
+
+<meta property="og:title" content="JavaScript Variables - Adam&#39;s Post">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://adamloee.github.io/adam-blogs/posts/js/variables/">
+<meta property="og:image" content="http://adamloee.github.io/adam-blogsimages/default.png">
+<meta property="og:site_name" content="Adam&#39;s Post">
+<meta property="og:description" content="All about JavaScript Variables ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Adam&#39;s Post">
+<meta name="twitter:url" content="http://adamloee.github.io/adam-blogs/posts/js/variables/">
+<meta name="twitter:title" content="JavaScript Variables - Adam&#39;s Post">
+<meta name="twitter:description" content="All about JavaScript Variables ">
+<meta name="twitter:image" content="http://adamloee.github.io/adam-blogsimages/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://adamloee.github.io/adam-blogs"
+    },
+    "headline": "JavaScript Variables - Adam&#39;s Post",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://adamloee.github.io/adam-blogsimages/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-11-08T00:00:00JST",
+    "dateModified": "2016-11-08T00:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Adam&#39;s Post"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Adam&#39;s Post",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://adamloee.github.io/adam-blogsimages/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "All about JavaScript Variables "
+  }
+</script>
+
+
+    <link href="http://adamloee.github.io/adam-blogscss/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://adamloee.github.io/adam-blogs">Adam&#39;s Post</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://adamloee.github.io/adam-blogs"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://adamloee.github.io/adam-blogsposts/" itemprop="url"><span itemprop="title">posts</span></a></li>
+        
+        <li class="active">JavaScript Variables</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-08T00:00:00JST">Nov 8, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://adamloee.github.io/adam-blogsposts/">posts</a></li>
+      
+    </ul>
+
+    <h1 class="title">JavaScript Variables</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="introduction-to-variables">Introduction to variables</h2>
+
+<p>In computer programming, a variable represents a very small chunk of  memory which is a part of memory pool reserved for a program in which it is declared to allow the manipulation of its value.</p>
+
+<p>For example, if you want to add two numbers, say 5 and 8 and would like to see the result displayed on your standard output. You would ideally need to have three variables so that you can hold their values into these variables. Let&rsquo;s say <code>x,y and z</code> are those variables which will hold the values of 5,8 and their sum respectively.</p>
+
+<p>The process of instructing to a computer program to hold some space for one of these variables  is known as <strong>declaring a variable</strong>. Declaration of variables put a request to the program in which it is written, asking for a small piece of memory to be used. How much memory you need is not decided by your program but it is you who tells the program how much you need. And this is done by specifying its type, therefore, a request for a variable which is going to hold  only true or false value would not require a lot of space from the memory, compare to the variable which is meant to hold your home address.</p>
+
+<p>In <a href="link">strongly typed languages</a>, a variable type is mentioned at the time of declaring a variable so the program knows how much memory it has to allocate to a particular variable from its own given heap of memory. That is right, every program when run are allocated some space by the operating system and from within that space a variable declared by you gets its portion of memory.</p>
+
+<p>Since JavaScript was not intended to be a strongly typed language by design, it had never offered this option to declare variables with its type until recently when <a href="#">ECMA Script 6</a> was released. This topic will be discussed in chapter <a href="#">book-mark</a>. Coming back to our topic of variables, a programmer  must have some concept of what goes on  when the program  is run.</p>
+
+<p>In JavaScript it is the host environment commonly known as the interpreter or the <a href="#">engine</a> decides how much memory is needed and when to free that memory. Freeing the memory means that if you are done with that declared variables you must free that space by instructing the program. It is by the design of this language that all handling with memory is left to the interpreter. So the programmer only declares the variable uses it and forgets about the memory manipulation.</p>
+
+<p>once you declare a variable in JavaScript using a keyword <code>var</code> followed by itsName ( known as identifier), a space is reserved in a memory that space has the address just like your or mine home address but obviously, it has not got a post code or a zip code but it is simply an address in a language that a computer understand. Thus, a variable declared like <code>var x</code> is stored in a table like fashion by the interpreter so that it knows which address of the memory is pointed by x, y or z. By keeping this information the interpreter, compiler or any other internal program responsible for handling memory management is capable of managing an allocated space. A typical declaration of variable in JavaScript would look like as follows</p>
+
+<pre><code class="language-javascript">        var x; // declaring a variable, 
+        var myName = &quot;Ghafoor Sayyed&quot;; // declaration and assignment
+</code></pre>
+
+<p>where the  <code>var</code> is a keyword already known to JavaScript interpreter, so that when it comes across, the interpreter knows it has to reserve some space in memory. So it does, but it has to point that space in a memory so that it can remember and manipulate it according to the programmer&rsquo;s wish. And this pointing is done by using the name you have provided in this case it is <code>myName</code>. And what is the word <code>myName</code> is doing here is identifying the address where either something is stored or will be stored. In the above case, we already have stored the value in string format. By nature of its job the declared variable name is known as an <strong>identifier</strong>. The value stored in the space reserved by the keyword <code>var</code>is not manipulated by its contents but by the address where it is kept therefore what you keep it in this space is of no importance from the storage point of view, whether it is Jack or Jill or anything else.</p>
+
+<p>once we have some idea about the variable declaration it is also time to pay some attention towards its contents. A student of secondary class knows that the value of small <code>g</code> in an equation of <code>w = mg</code> is a constant and never changes on the Earth thus it would be a right decision to store it in a constant instead  of variable.</p>
+
+<p>The above brief discussion is no way near the articles and books are written about them but is just an introduction to what a programmer must understand and ponder over before starting the journey of writing a piece  of code.
+Following are the names of  books which you may like to refer in your own time.</p>
+
+<ol>
+<li>JavaScript:The Definitive Guide by David Flanagan published by O&rsquo;REILLY</li>
+<li>JavaScript:The Good Parts by Douglas Crockford published by O&rsquo;Reilly</li>
+</ol>
+
+<h3 id="declaring-a-variable">Declaring a variable</h3>
+
+<p>In order to use a variable, in JavaScript or in any other computer programming language,  it has to be declared first. So that a compiler, interpreter or any other piece of software responsible for handling user-defined values, does the initial preparation like reserving some space in memory.</p>
+
+<p>Basically, a  variable is a place holder in  memory to store its value. Since there are different types of values which can be stored inside a variable. The exact type of the variable concerned is not known until it has been assigned a value. Once a value has been assigned its type can be checked using JavaScript <code>typeof</code>  operator  and its value can be also be logged to any output device. For example, to output the value to specific console another function called <code>console.log(x)</code> can be used.</p>
+
+<p>Let&rsquo;s start the ball rolling and look at the example below.</p>
+
+<pre><code class="language-javascript">    x;        // Ref-Error x is not defined
+    console.log(x);        // Execution never reaches here
+</code></pre>
+
+<p>The error produced or  ( more precisely the exception thrown )  is <strong>ReferenceError x is not defined</strong> can be avoided by using a   keyword <code>var</code>. The keyword <code>var</code> preceded by a legal variable name declares the existence of a variable to the interpreter so that it can do its initial preparation and <strong>identify</strong> it if this word comes across again.</p>
+
+<pre><code class="language-javascript">    var x;     // a semicolon is not needed but a good practice to use it
+    console.log(x);     // undefined
+</code></pre>
+
+<p>Once a <code>var</code> keyword is used the JavaScript V8 engine does not complain. The keyword <code>var</code> instructs the interpreter to hold some space into memory and deals with this variable by identifying it as a user defined variable. At this stage,  neither the type nor the value of this variable is  known.</p>
+
+<blockquote>
+<p>Note:In JS declaring a variable also initialized it with a predefined value of undefined.</p>
+</blockquote>
+
+<p>Understand the difference between not identifying the variable thus throwing an error and identifying it and logging its value as undefined. The code below may define the state of your variable.</p>
+
+<pre><code class="language-javascript">    The key word var holds a space into memory pointed by variable x and initialize it with default value of undefined
+         _______________________________________
+        |    console.log(x) =&gt; undefined        |
+        |    console.log(typeof(x)) =&gt; undefined|
+        |_______________________________________|
+                            ^
+                            |
+                            |
+                            x
+</code></pre>
+
+<p>Since no value is assigned to <code>x</code>, The JavaScript engine provides a special built-in primitive type  called <code>undefined</code>. This is right <code>undefined</code> is not an error but it is a JavaScript way to handle the variables by providing a built-in type. This is one of the reasons that JavaScript is known as loosely typed language. In strongly typed language a compiler may have complained about its type of not being defined.</p>
+
+<h3 id="variables-are-hoisted">Variables are hoisted.</h3>
+
+<p>The word hoisting refers to lifting something up. This exactly happens when the variable <code>x</code> is used before it is even declared.</p>
+
+<pre><code class="language-javascript">    console.log(x);        // undefined
+    var x;
+</code></pre>
+
+<p>The above produced no errors. It happens because the way the code is interpreted. Whether it is a variable declaration or a function declaration both of them are moved up or treated as they are declared at the top of the code before they are executed. Thus, the above code will be treated exactly the same way as in its predecessor code block. <strong>This behaviour in JavaScript is called  hoisting</strong>.</p>
+
+<p>The hoisting only takes place with variable or function deceleration and not with variable or functions assignment. Look at the following example where variable named <code>x</code> is assigned a value.</p>
+
+<blockquote>
+<p>Note: It is good practice to use semantic name of variables where possible</p>
+</blockquote>
+
+<h3 id="assignment">Assignment</h3>
+
+<p>Assigning a value to any declared variable requires two steps first is to delete whatever is already there and secondly place a new value in that place.</p>
+
+<pre><code class="language-javascript">    var x = 10;
+    console.log(x);     // 10
+    console.log(typeof(x));        // number
+</code></pre>
+
+<p>The above code <code>var x = 10;</code> consist of two operations and  can be rightly  interpreted in two parts as follows:</p>
+
+<ol>
+<li>First, variable <code>x</code> is declared. Declaring variable reserves a space in memory which is referenced by the variable identifier in above case it is <code>x</code></li>
+<li>Second, variable <code>x</code> is assigned a value of 10, whose type is of <code>number</code> as shown in above code.</li>
+</ol>
+
+<p>The above two steps are known as initialization compare to the declaration which is a one step process. Thus, it can be said that variable <code>x</code> has been initialized with a value 10. The part <code>var x</code> declares a variable while the assignment operator <code>=</code>  is a command which places 10 into  space reserved by a declaration of <code>x</code> . This location in the memory is  pointed by its  identifier  <code>x</code>.</p>
+
+<p>In order to use the value of any variable stored in a memory and referenced by the identifier, the variable literal is used. Thus <code>console.log(x)</code> logs the value of <code>x</code> to a console. To find out its type  a <code>typeof</code> operator is used.</p>
+
+<p>Once a variable is assigned any value, it can be redeclared. Re declaring does not loose the variable value, it remains the same.</p>
+
+<pre><code class="language-javascript">  var y = 100;
+  console.log(y); // 100
+  var y; // o.k no error is thrown this time
+  console.log(y); // 100
+</code></pre>
+
+<h3 id="variables-declaration-is-hoisted-not-its-assignment">Variables declaration is hoisted not its assignment</h3>
+
+<p>What happens when the variable <code>x</code> is used before it has been initialized? Keep in mind the difference b/w declaring and initializing.</p>
+
+<pre><code class="language-javascript">    console.log(x);     // undefined
+    var x = 10;
+</code></pre>
+
+<p>The result is <code>undefined</code>. The code <code>var x = 10;</code> is an initialization
+not a mere declaration. Thus, before execution, the existence of variable <code>x</code> is known to the interpreter so it won&rsquo;t  throw a <code>ReferenceError</code> exception but it will not give you the expected result either.</p>
+
+<p>Instead, it will treat it as a mere declaration, not as initialization. This is what meant when said above that only declaration  is hoisted not an assignment. And when these two steps happen in one statement only the first part is hoisted because the actual assignment takes place after the execution of line 2 thus till the line 2 is executed the value of <code>x</code> is not defined. The above code is interpreted as  explained below.</p>
+
+<pre><code class="language-javascript">    var x;
+    console.log(x);     //undefined
+    x = 10;
+</code></pre>
+
+<blockquote>
+<p>Note:Initialized first use second.</p>
+</blockquote>
+
+<p>So a rule of thumb is that if a variable is used before it has been initialized its existence is known but its assignment is not. And while it existence in known an exception of &ldquo;ReferenceError&rdquo; in not thrown and the assignment operation  does not take place so neither its value nor its type is known.</p>
+
+<p>Once a variable has been initialized with some value. It will always yield that value unless its reference is changed or its value is changed.</p>
+
+<pre><code class="language-javascript">    var x = 10; // x----&gt; |  10  |&lt;---- place in memory reserved by var and referenced by x
+
+    var y = 20; // y----&gt; |  20   |&lt;---- place in memory reserved by var and referenced by y
+
+    // assign value of y to x
+    x = y; // After this command both x and y refer to a same location
+            // the initial place reserved by &quot;var x&quot; is lost
+
+            // y-----&gt; |    20   | &lt;-----x
+
+    //note if you defined a variable or a function twice the last assigned value is used.
+    var z = 10;
+    var z = 20; // this value will be used
+    var result = function(){console.log(&quot;first defined &quot; + z)};
+    var result = function(){console.log(&quot;second defined&quot; + z)}; // this will be invoked
+    result();
+</code></pre>
+
+<h2 id="variables-scope">Variables&rsquo; Scope</h2>
+
+<p>The scope of a variable is determined according to the place where it is declared. A variable is said to either have a global or local scope. Variables having global scope means that they are available from anywhere in the program including any functions or a any conditional block. On the contrary a variable of having local scope is not available from anywhere but within its local block. Having said that in JavaScript things are bit different with respect to the local scope. Strictly speaking JavaScript never had local scope as found in other languages, but a function-level scope until ECMAScript-6, where it has introduced a new key word <code>let</code> which provides a local scope to any variable in a  block where it is declared.</p>
+
+<h3 id="how-variables-are-assigned-scope">How Variables&rsquo; are assigned scope</h3>
+
+<p>JavaScript keyword <code>var</code> plays important role in providing scope to a variable but the keyword <code>var</code> is not must. JavaScript allows  variables to be declared without them being preceded by <code>var</code> in different circumstances.</p>
+
+<p>When a program is run, JavaScript engine has to perform many task even before it is really executed. For example it will first parse the file, look for all the variables and functions declaration and will hoist them at the top level. Next it deals with variables deciding to which group they belong to Global or non-global. If they are global, are they true global or implied global? Consequently  setting their attributes and values accordingly and so on. All these small bits are must for a programmer to understand the process which happens behind the scene even before a code is run.</p>
+
+<h3 id="what-is-a-true-global-or-implied-global-variable">What is a true global or implied global variable ?</h3>
+
+<p>The answer is very simple  those variables which are declared explicitly i.e., preceded by keyword <code>var</code> are grouped as true global variable while those which are not declared but assigned a value are treated as implied global.</p>
+
+<pre><code class="language-javascript">   var age = 29;    // true global
+   height = 5.8;    // implied global
+</code></pre>
+
+<h3 id="why-is-it-important">Why is it important?</h3>
+
+<p>When a global variable is created, it becomes a property of a Global object. JavaScript engine assigns four attributes to this  this property. The values of theses attributes depends how a variable os declared. For example one of the attribute is <code>configurable</code> which value is set to false provided it is a true global. If it was an implied global the value of <code>configurable</code> would be set to true. And when it is set to true, the variable can be deleted. Once a variable is deleted it no longer exist hence can not be accessed again as shown below.</p>
+
+<pre><code class="language-javascript">   var trueGlobal = true;
+   impliedGlobal = true;
+   //......
+   delete.impliedGlobal;
+   console.log(impliedGlobal) ;// error 
+</code></pre>
+
+<h2 id="what-are-other-attributes-of-a-global-property">What are other attributes of a global property?</h2>
+
+<p>When a global variable is created it becomes the property of a global object it is also known as the member of that object, this property or member whatever you call it gets some attributes associated with it. The values of these attributes get set depending how they are declared as a true global or implied global. Let&rsquo;s look at the example below which finds out a newly declared global variable&rsquo;s associated attributes. Since it becomes the member of a <code>global</code> object the keyword <code>global</code> is used in the function.</p>
+
+<pre><code class="language-javascript">   var price = 100; // true global variable
+   console.log(Object.getOwnPropertyDescriptor(global,&quot;price&quot;));
+   //{   value: 100,writable: true,enumerable: true, configurable: false } 
+</code></pre>
+
+<p>The above shows that, a  global variable has four attribute namely <code>value, writable, enumerable and configurable</code>. We saw earlier if it is not a true global the value of <strong>configurable</strong> is set to true thus it can be deleted otherwise not. If <strong>enumerable</strong> is set to false it can not be enumerated using <code>for... in</code> loop. If <strong>writable</strong> is set to true it indicates that it is not a constant and its value can be changed. Similarly the first one <strong>value</strong> has  its value set to whatever you assigned it when declaring a variable. If you do not assign the value when declaring, it gets assigned the <code>undefined</code>. Lets also look at the attributes of an implied global. Its configurable is set to true thus can be deleted.</p>
+
+<pre><code class="language-javascript">   vat = 0.2;
+   console.log(Object.getOwnPropertyDescriptor(global,&quot;vat&quot;));
+   // { value: 0.2, writable: true, enumerable: true,  configurable: true }
+   delete vat; // o.k 
+</code></pre>
+
+<h3 id="global-object-s-properties-attributes">Global Object&rsquo;s properties attributes</h3>
+
+<ul>
+<li><strong>Value</strong>: Its value assigned when you declared a variable, if not it gets the default value of <code>undefined</code>.</li>
+<li><strong>Writable</strong>:It can be assigned a new value, the old value can be deleted and new values can be assigned.</li>
+<li><strong>Enumerable</strong>:As the name indicates that if set to true the variable can be accessed using enumeration like <code>for..in</code> loop using <code>object.keys</code>. And can be saved permanently using <code>JSON.stringify</code> method. In case of false these methods of enumeration can not be applied.</li>
+<li><strong>Configurable</strong>:To control the other two attributes i.e., its behaviour can be modified which simply means that you can change the value of other attributes. For example you can make them non-enumerable or non writeable or even non configurable.</li>
+</ul>
+
+<h2 id="are-there-many-global-objects">Are there many global objects?</h2>
+
+<p>You will be using JavaScript either in node.js environment or in a browser. If it is browser, the global object is <code>window</code> and if it is a node.js environment it is a <code>global</code> itself. This global object gets many functions associated with it to be used which will be discussed in Objects Chapter.</p>
+
+<h3 id="is-a-key-word-var-optional">Is a key word <code>var</code> optional?</h3>
+
+<p>The common question or say point of discussion among new JavaScript programmers found to be the declaration of a key word <code>var</code> whether it is optional or not. The answer lies in understanding of what happens with explicit declaration of a key word <code>var</code> or without it, as discussed above the keyword <code>var</code> makes it true global. Let&rsquo;s look at the code below.</p>
+
+<pre><code class="language-javascript">   var a ; // An explicit declaration of a variable making it a true global
+    b ; // it is an error since b is neither declared nor assigned any value
+</code></pre>
+
+<p>When JavaScript  sees a keyword <code>var</code> it basically informs the interpreter to do the necessary work and it also dictates  the interpreter:</p>
+
+<ol>
+<li>Not to use reverse traversal  look up for this identifier but use this one.</li>
+<li>And provide it a scope according to the location where it is declared. If it is declared within a function, it gets a local scope or if it is declared outside the function either on the top or somewhere in the file it gets a global scope.</li>
+</ol>
+
+<p>But when it comes across the variable which is declared without a key word <code>var</code> as  <code>b</code>, first it has to resolve its identity and it does it by traversing back to see if it had already been defined or not. If not, it throws an error. But if it finds the entry, it associates that variable with the first found entry and provide it the corresponding scope.</p>
+
+<h3 id="how-the-scope-is-determined-if-a-same-identifier-is-used-to-declare-a-variable-more-than-once">How the scope is determined if a same identifier is used to declare a variable more than once ?</h3>
+
+<p>If a same identifier is used to declare a variable inside and outside a function. They are two completely different variables. A variable inside a function life only exist when the function code is executed. It gets created and destroyed as many times as the function is invoked and said to have a function scope or local scope, as opposed to the top level identifier which life exist so long the program is being executed.</p>
+
+<pre><code class="language-js">    var c ;
+    //..........
+    //........
+    c = 20; 
+</code></pre>
+
+<p>The above code shows a variable <code>c</code> declared on top, and somewhere else in the program it has been assigned a value. The variable <code>c</code> is said to have a global scope as it is not a part of any function. It is also possible to declare a local variable with the same name as global variable.</p>
+
+<pre><code class="language-javascript">    var d;
+    //......
+    function fn(){
+        var d;  // first found entry of d
+        //.....
+        d = 20;
+        console.log(&quot;It is local d :&quot; + d);
+    }
+    fn();
+    console.log(&quot;it is global d :&quot; + d);
+</code></pre>
+
+<p>As long as local variable is declared with a keyword <code>var</code> it is different from the global variable but if it is not declared but used in a function it will be associated with  the first found entry of that variable thus having a functional level scope.</p>
+
+<h3 id="what-is-the-difference-between-function-scope-and-block-scope">What is the difference between function scope and block  scope?</h3>
+
+<p>To understand the difference one should understand that programming languages uses a local scope as compared to global scope where a variable is said to have a local scope if it is declared in a block of curly braces. These pair of curly braces can be of an if statement or any other loop like <code>for</code> or <code>do-while</code>or mere <code>while</code> loop but it is not true when it comes to JavaScript. Let&rsquo;s look at the example below and decide whether a variable has a local scope or not.</p>
+
+<pre><code class="language-javascript">    var x = 11; // global variable accessible from anywhere in the program    
+    {
+        console.log(x); // o.k global x is accessible from here
+             var y = 12; // should get a local scope
+    }
+    console.log(y);// oops! y is  visible here as well.
+</code></pre>
+
+<p>In the above example the code block should get a local scope and having local scope means that the variable defined inside the block should only exist within the block. But this is not what happens above,the value of variable <code>y</code>is printed outside the block which indicates  that JavaScript does not have block level scope. And this statement is true and applies to all ECMAScript  except ECMAScript-6 in which block level scope is defined using two new keywords <code>let</code> and <code>const</code>. Let&rsquo;s see another example where a local variable is declared in a for loop.</p>
+
+<pre><code class="language-javascript">   var index = 1;
+   for (index; index &lt;= 10; index++){
+    var multiplier = 5;
+    var product = multiplier * index;
+    console.log(&quot;The product of &quot;+ multiplier +&quot; * &quot;+ index + &quot; = &quot; + product);
+   } 
+   console.log(&quot;\n\nThe multiplier declared in For block is:&quot; + multiplier);   
+</code></pre>
+
+<p>The out put of the above code shows that the variable <code>multiplier</code> is accessible out side the curly bracket which is not expected from a local variable. A local variable only exists within the block where it is declared. We can define a local scope to any variable declared in any block using <code>let</code>. Thus a variable declared with <code>let</code> having a block scope is not accessible outside that block as shown below.</p>
+
+<pre><code class="language-javascript">    var index = 1;
+   for (index; index &lt;= 10; index++){
+        let multiplier = 5;
+        var product = multiplier * index;
+        console.log(&quot;The product of &quot;+ multiplier +&quot; * &quot;+ index + &quot; = &quot; + product);
+   } 
+   // the code below will throw an error 
+   console.log(&quot;\n\nThe multiplier declared in For block is:&quot; + multiplier);   
+</code></pre>
+
+<p>Once it is clear that JavaScript does not provide block scope unless a new keyword <code>let</code> is used to force a variable of having a block sope. It is also must that you understand that JavaScript function does provide variables local scope. if the above code is written inside a function then it is available only inside the function regardless of being declared as preceded by a keyword <code>let</code> or not.</p>
+
+<pre><code class="language-javascript">   function addThem(a,b) {
+        var result = a + b;
+        console.log(&quot;The sum of &quot;+ a &quot; and &quot; + b + &quot; is :&quot;+result);
+   }
+    addThem(10,10);
+    console.log(&quot;The variable result is not accessible here &quot; + result);
+</code></pre>
+
+<blockquote>
+<p>Note: Values in different context get different scopes</p>
+</blockquote>
+
+<p>Variable always exist in some scope which is determined by the location where it is declared. No matters what scope a variable has a programmer must be clear in mind what exactly he wants to do with the variables.</p>
+
+<blockquote>
+<p>Note: Always remember to declare the variable first and used next.</p>
+</blockquote>
+
+<h3 id="naming-a-variable">Naming a variable</h3>
+
+<p>When deciding about variable name, like most other languages JavaScript is also a case-sensitive language. Thus upper case <code>X</code> is not same as lower case <code>x</code>. Apart from case sensitivity following rules must be met.</p>
+
+<ol>
+<li>The first character can be a letter [a-z, A-Z] or an under score <code>_</code> or a dollar sign <code>$</code>. Numbers can&rsquo;t  be used as the first character of a variable to distinguish between a letter and number.</li>
+</ol>
+
+<pre><code class="language-javascript">    var 1;    // unexpected error
+    var one; // o.k
+    var one1; // o.k, They can be used after the first character
+    var he1lo; // o.k but confusing
+    var Na_m-e; // o.k but ambiguous
+    var $variable // o.k  can  come first
+    var _valid_variable // o.k and so on.
+</code></pre>
+
+<ol>
+<li><p>When you type letters from your keyboard e.g., <code>a</code> it is translated into ASCII code first . Since most of us have  keyboard which displays only English language characters does not mean that other language characters are not used. They are commonly used by thousands of people if not million. JavaScript also allows unicode characters but use it if you know about encoding so it is wise and safe  to use ASCII range which most people are familiar with.</p></li>
+
+<li><p>The intended variable name must not be a [keyword (link) or a reserved word.</p></li>
+</ol>
+
+<pre><code class="language-javascript">     var return = 100; // not allowed
+     var this = &quot;that&quot;; // not allowed
+</code></pre>
+
+<ol>
+<li>You can check if your variable is legal or not on <a href="https://mothereff.in/js-variables">Validator</a></li>
+</ol>
+
+<h4 id="different-ways-of-declaring-a-variable">Different ways of declaring a variable</h4>
+
+<p>A variable can be declared individually, separate from others or they may be declared in one line. They can also be declared and initialized in one line.</p>
+
+<pre><code class="language-javascript">    var greetings = &quot;Hello To JavaScript Learners!!&quot; // single declaration
+    var last_name , first_name , full_name; // multiple declaration
+    var age = 32 , height = 5.8 , weight = 69; // declaring and initialization
+    var x = 10,
+        y = 11,
+        z = 23,
+</code></pre>
+
+<h4 id="coding-convention">Coding Convention</h4>
+
+<p>It is an old saying that <code>a bad/old habit dies hard</code> thus always try to follow the guidelines of the language in used. It improves readability and makes it easier to understand and alter.
+A style of writing code is known as <a href="https://en.wikipedia.org/wiki/CamelCase">camelCase</a> has become the  de facto style among developers. You may find two varieties even in camelCasing, stick to any one and use the same style in your entire program. Do not change it , it will create confusion for yourself after sometime in future.</p>
+
+<h4 id="do-the-following">Do the following.</h4>
+
+<ul>
+<li>Start variable and function names  with lower case as <code>var last</code>.</li>
+<li>If The second word is present  use the capital letter to start with as <code>var lastName</code>.</li>
+<li>Always end the statement with a semicolon as <code>var lastName = &quot;Sayyed&quot;;</code>, leave spacing around the operator as done.</li>
+<li>Always use four spaces for indenting your code block.</li>
+</ul>
+
+<pre><code class="language-javascript">var lastName = &quot;Sayyed&quot;; // o.k but does not adhere to styles
+    var lastName = &quot;Sayyed&quot;; // Good
+</code></pre>
+
+<ul>
+<li>When writing a block of code with curly brackets pay attention to white spaces and put the opening bracket at the end of the first line. It does improve your code readability. End the block with a closing bracket on a new line without any spaces so that it aligns with the function declaration.</li>
+</ul>
+
+<pre><code class="language-javascript">    function greetingsToAll(message) {
+        //your code
+    }
+</code></pre>
+
+<ul>
+<li>Leave space when dealing with loops declaration</li>
+</ul>
+
+<pre><code class="language-javascript">    for (var index = 1; index === 10; index++) {
+        //your code
+    }
+    // same code below does not follow style guides by omitting spaces
+    for(var index=1; index===10; index++){
+        //your code
+    }
+
+</code></pre>
+
+<ul>
+<li>Global variables are usually written in UPPERCASE, but avoid using global variables if possibles.</li>
+<li>Constants are also written in UPPERCASE.</li>
+</ul>
+
+<blockquote>
+<p>Note:
+To find out more about JavaScript Code Convention and other development visit <a href="https://github.com/rwaldron/idiomatic.js">idiomatic.js</a></p>
+</blockquote>
+
+<h2 id="which-version-of-javascript-am-i-using">Which Version of JavaScript am I using?</h2>
+
+<p>Before we go any further we must stop here and ask this question which version of JavaScript I am working with. The best answer is to use the command prompt to find out which version of the Node you are using and then go to <code>Nodejs.org</code> site to find out what is supported by this node version.</p>
+
+<p>But the simplest answer to this question would be that node uses <code>V8 engine</code> and <code>V8</code> implements ECMAScript specification specified in ECMA-262 third edition and this 3rd edition is JavaScript 1.5. To cut the answer short, programmer are no longer interested in what version of JavaScript is used as JavaScript is only the trade-of name. The actual language specification is known and understood by ECMA-262. And, so far has version 1,2,3,5 and the last one released is version 6 to this date.</p>
+
+<ol>
+<li>ECMAScript-262 First Edition released in June 1997</li>
+<li>ECMAScript-262 Second Edition released in August 1998</li>
+<li>ECMAScript-262 Third Edition released in December 1999</li>
+<li>ECMAScript-262 Fourth Edition does not exist</li>
+<li>ECMAScript-262 Fifth Edition released in December 2009</li>
+<li>ECMAScript-262 5.1 Edition released in June 2011</li>
+<li>ECMAScript-262 Sixth  Edition released in June 2015 is the latest version of at the time of writing this notes.</li>
+</ol>
+
+<p>Continuous effort is going on by NodeJs organization to support the latest release specification which is ECMAScript-6. The latest work can be seen <a href="https://nodejs.org/en/docs/es6/">here</a>.</p>
+
+<h2 id="how-to-check-if-a-variable-is-undefined">How to check if a variable is undefined</h2>
+
+<p>Following example shows different attempt to find out if a variable exists and if exist what is its type. An undefined variable always yields to false in boolean context.</p>
+
+<pre><code class="language-javascript">    var x;
+    if(x){
+        console.log(x);
+    }else{
+        console.log(&quot;1. x is :&quot; + x);
+    }
+
+    // The above can be done in more elegant way
+    if(x === undefined) console.log(&quot;2. x is :&quot; + x);
+
+    //but it can not be done by the following
+    if(typeof(x) === undefined) console.log(&quot;3. x is :&quot; + x);
+
+    // though it can be corrected
+    if(typeof(x) === &quot;undefined&quot;) console.log(&quot;4. x is :&quot; + x);
+
+    // An attempt to do the following can be deceptive as
+    // it will always yield to true
+    if(typeof(x)) console.log(&quot;5. x is :&quot; + x);
+</code></pre>
+
+<h2 id="accepted-way-of-assigning-a-value-to-a-variable">Accepted way of assigning a value to a variable</h2>
+
+<pre><code class="language-javascript">  function(number){
+    var x = number || 0; // at first it is undefined so get the value to 0
+  }
+  
+</code></pre>
+
+<h2 id="public-protected-or-private-variables-in-js">Public, Protected or Private variables in JS</h2>
+
+<p>In Js when dealing with objects, there is very clear distinction between class based Object Oriented languages and the way js does the job. First of all, JS provides a quick way of creating singleton object from the built in constructor or using its short cut literal {}. When adding members to a singleton object, one does not have any way of providing the access modifiers to member variables. All members are by default public and can be accessed by the singleton object. In this form of pattern creation this is the default behaviour of JS. To get the variables defined private or public one needs to take help from the <code>function</code> construct and define the variable in function with <code>var</code> making them <code>private</code> to the function.</p>
+
+<pre><code class="language-javascript">  // Normal way of creating a singleton where members are public
+    var o ={x: 1, getOne:function(){return x;}}
+    console.log(o.x); /*x is available directly on the object which makes is public. To make it private it should be available through the public method console.log(o1.getOne()) ;// 1.*/
+
+    // Make it private using function
+    var o = (function(){
+      var x = 1;
+      return {
+        getOne:function(){return x;}
+      };
+    })();
+    console.log(o + &quot;&quot;);
+    console.log(o.x);
+    console.log(o.getOne());
+  }
+</code></pre>
+
+<p>If one wants to add private function it can be done is a same manner, that is to add them as a private variable to a function and access them from the object that needs to be returned which is done as follows;</p>
+
+<pre><code class="language-javascript">  var o = (function(){
+    var _x = 1; // private variable
+    var _setX = function(x){ // private function
+        _x = x; 
+    }
+  return {
+    getOne:function(){return _x;},
+    // public method of this object 
+    setOne:function(x){ if(x != null &amp;&amp; x!= undefined)_setX(x);} 
+    };
+  })();
+  console.log(o + &quot;&quot;);
+  console.log(o.x);
+  console.log(o.getOne());
+  // setting new value to x
+  o.setOne(10);
+  console.log(o.getOne()); // 10;
+</code></pre>
+
+<h3 id="we-can-summarise-the-above-as-follows">We can summarise the above as follows:</h3>
+
+<ol>
+<li>Private variable are always declared with the <code>var</code> keyword in a given scope usually inside a function the same rule apply for the mehtods.</li>
+<li>Public variable and method are declared using <code>this</code> keyword which refers that they belong to instance and are directly accessible from outside the object.</li>
+<li>Public variable and method can also be added to &ldquo;Prototype&rdquo; object using <code>classname.prototype.proertyName =</code> sharing code with all instances.</li>
+<li>Static property can be defined using <code>classname.propertyName =</code></li>
+</ol>
+
+<p>Although JavaScript has been a class less language until ECMAScript-6 yet does not fully qualify as a pure Object Oriented Language. Though it  has been known to provide code reuse or sharing behaviour through Prototypal inheritance.  And it is definitely an object based language.</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://adamloee.github.io/adam-blogscategories/js/">js</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://adamloee.github.io/adam-blogstags/js/">js</a></li>
+          
+          <li><a href="http://adamloee.github.io/adam-blogstags/javascript/">JavaScript</a></li>
+          
+          <li><a href="http://adamloee.github.io/adam-blogstags/javascript-variabless/">JavaScript Variabless</a></li>
+          
+          <li><a href="http://adamloee.github.io/adam-blogstags/js-variables/">JS variables</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://adamloee.github.io/adam-blogs/posts/js/variables/" class="list-group-item">JavaScript Variables</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/" class="list-group-item">Adam&#39;s Post</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/categories/" class="list-group-item">Categories</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/tags/javascript/" class="list-group-item">Javascript</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/tags/javascript-variabless/" class="list-group-item">Javascript Variabless</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/tags/js/" class="list-group-item">Js</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/categories/js/" class="list-group-item">Js</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/tags/js-variables/" class="list-group-item">Js Variables</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/posts/" class="list-group-item">Posts</a>
+      
+      <a href="http://adamloee.github.io/adam-blogs/tags/" class="list-group-item">Tags</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://adamloee.github.io/adam-blogscategories/js" class="list-group-item">js</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://adamloee.github.io/adam-blogstags/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://adamloee.github.io/adam-blogstags/javascript-variabless" class="list-group-item">javascript-variabless</a>
+      
+      <a href="http://adamloee.github.io/adam-blogstags/js" class="list-group-item">js</a>
+      
+      <a href="http://adamloee.github.io/adam-blogstags/js-variables" class="list-group-item">js-variables</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>(c) 2017 adamleo.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

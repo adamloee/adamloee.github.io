@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam&#39;s Post</title>
+    <link>http://adamloee.github.io/adam-blogs/</link>
+    <description>Recent content on Adam&#39;s Post</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) 2017 adamleo.</copyright>
+    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://adamloee.github.io/adam-blogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript Variables</title>
+      <link>http://adamloee.github.io/adam-blogs/posts/js/variables/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://adamloee.github.io/adam-blogs/posts/js/variables/</guid>
+      <description>Introduction to variables In computer programming, a variable represents a very small chunk of memory which is a part of memory pool reserved for a program in which it is declared to allow the manipulation of its value.
+For example, if you want to add two numbers, say 5 and 8 and would like to see the result displayed on your standard output. You would ideally need to have three variables so that you can hold their values into these variables.</description>
+    </item>
+    
+  </channel>
+</rss>
