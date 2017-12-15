@@ -3,13 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://adamloee.github.io/adam-blogs/posts/js/variables/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://adamloee.github.io/adam-blogs/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -19,44 +13,7 @@
   </url>
   
   <url>
-    <loc>http://adamloee.github.io/adam-blogs/tags/javascript/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://adamloee.github.io/adam-blogs/tags/javascript-variabless/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://adamloee.github.io/adam-blogs/tags/js/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://adamloee.github.io/adam-blogs/categories/js/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://adamloee.github.io/adam-blogs/tags/js-variables/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://adamloee.github.io/adam-blogs/posts/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://adamloee.github.io/adam-blogs/tags/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,46 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2017 adamleo.</copyright>
-    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://adamloee.github.io/adam-blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Javascript</title>
-      <link>http://adamloee.github.io/adam-blogs/tags/javascript/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://adamloee.github.io/adam-blogs/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript Variabless</title>
-      <link>http://adamloee.github.io/adam-blogs/tags/javascript-variabless/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://adamloee.github.io/adam-blogs/tags/javascript-variabless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
-      <link>http://adamloee.github.io/adam-blogs/tags/js/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://adamloee.github.io/adam-blogs/tags/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js Variables</title>
-      <link>http://adamloee.github.io/adam-blogs/tags/js-variables/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://adamloee.github.io/adam-blogs/tags/js-variables/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

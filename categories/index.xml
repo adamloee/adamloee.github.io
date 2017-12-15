@@ -11,14 +11,5 @@
 	<atom:link href="http://adamloee.github.io/adam-blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Js</title>
-      <link>http://adamloee.github.io/adam-blogs/categories/js/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://adamloee.github.io/adam-blogs/categories/js/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
