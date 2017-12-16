@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Adam&#39;s Post</title>
-    <link>http://adamloee.github.io/adam-blogs/categories/</link>
+    <link>http://adamloee.github.io/categories/</link>
     <description>Recent content in Categories on Adam&#39;s Post</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2017 adamleo.</copyright>
     
-	<atom:link href="http://adamloee.github.io/adam-blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://adamloee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Js</title>
-      <link>http://adamloee.github.io/adam-blogs/categories/js/</link>
+      <link>http://adamloee.github.io/categories/js/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://adamloee.github.io/adam-blogs/categories/js/</guid>
+      <guid>http://adamloee.github.io/categories/js/</guid>
       <description></description>
     </item>
     
